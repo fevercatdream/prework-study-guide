@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -46,12 +47,42 @@
           <li>The footer appears at the bottom of the page and usually contains the author, copyright, contact, sitemap, and navigation.</li>
           <li>Section elements are semantic elements that define a section in a document that contains thematic content.</li>
           <li> HTML uses the id attribute as a way to identify elements and select them.</li>
+          <li>Debugging is one of the most important parts of the development process. Every day, developers notice errors and review code that isn’t working. It’s important to get into the mindset that errors and mistakes are gifts. They tell us when something is wrong, and if we can stay curious, we can figure out what is happening and learn something new.</li>
+          <li>Remember that we can style HTML elements using the elements as selectors or by using the class attribute as a selector.</li>
         </ul>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>Enter your CSS notes here</li>
+          <li>Cascading Style Sheets (CSS), which is a programming language used by developers to define how webpage content is presented to users.</li>
+          <li>Whereas HTML strictly handles the structure and content of a webpage, CSS defines the colors, aesthetics, visual layout, and organization.</li>
+          <li>inline CSS: When a developer wants to style an element directly in the HTML file, they use inline CSS. Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only. They’re useful for quick and permanent changes but are less flexible than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</li>
+          <li>internal CSS style sheet: It is also possible to embed an entire stylesheet directly in the HTML file using a style element in the head element. This internal style sheet contains CSS rules for the webpage in the head section of the HTML file. The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code. Again, a single change to the CSS rule will apply to all tagged page elements.</li>
+          <li>external CSS style sheet: The most common way to style a webpage is by using an external CSS style sheet. This is preferred in most cases because it allows developers to keep all their CSS rules in a separate file, which makes design changes easier.</li>
+          <li>When we create an external CSS file, we need to link it to the HTML file. Just because our files are in the same project repository doesn’t mean they know about each other. To do this, we will use the HTML link element.</li>
+          <li>Separation of concerns is a widely used term in web development and refers to separating code into different files based on use. Separation of concerns is based on the idea that each section of code should have its own responsibility.</li>
+          <li>*: * selector, a special wild card symbol, selects every element</li>
+          <li>A selector defines the element or attributes to which the rules, or declarations, will apply.</li>
+          <li>Declarations contain two important components: the CSS property we want to apply and the value of the property.</li>
+          <li>A margin property indicates how much space we want around the outside of an element. The margin is not visible on the page; it merely adds a buffer. When we set the margin property to 0, we are indicating that we want NO extra space around the element.</li>
+          <li>The padding property is often confused with margin, but it is not the same thing. The padding property adds space around the content inside an element. When you increase padding, you are actually making the entire element bigger! That is because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer outside an element.</li>
+          <li>Every HTML element is essentially a box. Each box consists of margins outside the element, and the element's borders, padding, and content. This is sometimes referred to as the CSS box model.</li>
+          <li>The margin is not counted towards the actual size of the box — sure, it affects the total space that the box will take up on the page, but only the space outside the box. The box's area stops at the border — it does not extend into the margin.</li>
+          <li>Do Not Repeat Yourself (DRY) is a coding principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines of code that need to be written or maintained. DRY can greatly reduce the overall size and complexity of a codebase.</li>
+          <li>text-align: This is one way to center a title or heading on a webpage.</li>
+          <li>The img selector assigns property values to any image element in the markup.</li>
+          <li>The display property is assigned with the block value, which assigns each image to start on a new line.</li>
+          <li>A link element creates the connection to the external file.</li>
+          <li>The rel attribute specifies the relationship between the current document and the linked document resource.</li>
+          <li>The href attribute specifies the location (URL) of the external resource. The href attribute is using a relative path. This means the location is derived from the current location.</li>
+          <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector. Then the class attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule.</li>
+          <li>.card: The period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain these property assignments from the CSS.</li>
+          <li>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.</li>
+          <li>Assigning colors in CSS can be done in many ways, including by semantic references such as gray or blue. We can also refer to a color by its hexadecimal code, or hex #.</li>
+          <li>The most popular are Hex color codes; three byte hexadecimal numbers (meaning they consist of six digits), with each byte, or pair of characters in the Hex code, representing the intensity of red, green and blue in the color respectively.</li>
+          <li>Hex code byte values range from 00, which is the lowest intensity of a color, to FF which represents the highest intensity.</li>
+          <li>The color white, for example, is made by mixing each of the three primary colors at their full intensity, resulting in the Hex color code of #FFFFFF.</li>
+          <li>Black, the absence of any color on a screen display, is the complete opposite, with each color displayed at their lowest possible intensity and a Hex color code of #000000.</li>
         </ul>
       </section>
       <section class="card" id="git-section">
@@ -67,6 +98,10 @@
           <li>cd bootcamp: change directory to bootcamp</li>
           <li>cd prework-study-guide: change directory to prework-study-guide</li>
           <li>pwd: "print working directory" prints the current directory</li>
+          <li>cd ..: will go to parent directory, go back one directory</li>
+          <li>cd ../: same as "cd .." but can continue to navigate folders following slash</li>
+          <li>touch: creates a file</li>
+          <li>cat: prints a file to the command line</li>
           <li>code .: will open the directory in VS Code</li>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout main: to switch to the main branch</li>
@@ -81,6 +116,8 @@
           <li>git commit -m "description of what changed in the code": Now that all of our changes have been staged, we can commit them to our repository.</li>
           <li>We use the -m flag to associate a message with our commit. Commit messages should be short descriptive messages of the changes implemented.</li>
           <li>git pull origin main: Before we push this up to our repo, we should double-check if our local branch is in sync with the base branch in GitHub. So let’s pull down any changes from the base branch.</li>
+          <li>It is a good habit to always pull the base branch into your feature branch before pushing up any code.</li>
+          <li>"Already up to date.": message appears in terminal if your branches are in sync</li>
           <li>git push origin "feature/starter-code": we are using a new command push to push the changes we have locally to our remote GitHub branch.</li>
         </ul>
       </section>
