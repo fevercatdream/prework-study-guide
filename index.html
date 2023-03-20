@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -49,6 +50,8 @@
           <li> HTML uses the id attribute as a way to identify elements and select them.</li>
           <li>Debugging is one of the most important parts of the development process. Every day, developers notice errors and review code that isn’t working. It’s important to get into the mindset that errors and mistakes are gifts. They tell us when something is wrong, and if we can stay curious, we can figure out what is happening and learn something new.</li>
           <li>Remember that we can style HTML elements using the elements as selectors or by using the class attribute as a selector.</li>
+          <li>&lt;!-- HTML comments go here, will also work in JavaScript --&gt;</li>
+          <!-- This is how HTML comments are made, will not show on page when rendered -->
         </ul>
       </section>
       <section class="card" id="css-section">
@@ -83,6 +86,7 @@
           <li>Hex code byte values range from 00, which is the lowest intensity of a color, to FF which represents the highest intensity.</li>
           <li>The color white, for example, is made by mixing each of the three primary colors at their full intensity, resulting in the Hex color code of #FFFFFF.</li>
           <li>Black, the absence of any color on a screen display, is the complete opposite, with each color displayed at their lowest possible intensity and a Hex color code of #000000.</li>
+          <li>/* CSS comments go here */</li>
         </ul>
       </section>
       <section class="card" id="git-section">
@@ -124,7 +128,87 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>JavaScript (JS) is a high-level dynamic programming language that allows users to interact with websites.</li>
+          <li>In web development, JavaScript is the tool that takes a static HTML/CSS webpage and makes it interactive. Every time you do something with a webpage, such as click a button, retrieve data, or fill out a form, JavaScript is at work!</li>
+          <li>Control flow is the order in which a computer executes code in a script. In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page.</li>
+          <li>The browser reads code in the order it appears in the file. If the JavaScript loads first and it is supposed to affect the HTML that hasn't loaded yet, there could be problems. Placing JavaScript near the bottom of an HTML page is one way to accommodate this dependency. Note that whereas the style.css file is linked within the head element, the script.js file is linked within the body element.</li>
+          <li>Control flow can be interrupted, however. We can use conditional statements and loops to control the order in which code is executed, or if it is even executed at all.</li>
+          <li>Variables are containers that store values. You start by declaring a variable with the &lt;const&gt;, &lt;let&gt;, or &lt;var&gt; keyword, followed by the name you give to the variable. This name must be unique because it is how we will reference the information stored in the variable in our code.</li>
+          <li>A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement.</li>
+          <li>JavaScript is case sensitive.</li>
+          <li>What exactly do we mean by “truthy” and “falsy” in Javascript? A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. All other values, including a Boolean with the value of true, are considered truthy.</li>
+          <li>We can use the console.log method to output a message to the web console by adding an argument.</li>
+          <li>The console.log method was created to make it easier for developers to test their code. Developers use it daily to debug and test the code that they write.</li>
+          <li>String: A sequence of text is known as a string. To signify that the value is a string, enclose it in single or double quote marks.</li>
+          <li>Number: Numbers don't have quotes around them.</li>
+          <li>Boolean: This is a True/False value. The words true and false are special keywords that don't need quote marks.</li>
+          <li>Array: An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way. Arrays are not limited to contain only a single type of data. A single array can store different types of data, such as strings, numbers, and so on. arrays are zero-indexed and sequential.</li>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over.</li>
+          <li>Object: This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn.</li>
+          <li>Comments are snippets of text that can be added along with code. The browser ignores text marked as comments.</li>
+          <li>/*
+            Everything in between is a comment. This is for multi-line comments.
+            */</li>
+          <li>// This is a comment. If your comment contains no line breaks, it's an option to put it behind two slashes.</li>
+          <li>An operator is a mathematical symbol that produces a result based on two values (or variables).</li>
+          <li>Addition: + : Add two numbers together or combine two strings.</li>
+          <li>Subtraction, Multiplication, Division: -, *, / : These do what you'd expect them to do in basic math.</li>
+          <li>Assignment: = : This assigns a value to a variable.</li>
+          <li>Strict equality: === : This performs a test to see if two values are equal. It returns a true/false (Boolean) result.</li>
+          <li>Not, Does-not-equal: !, !== : This returns the logically opposite value of what it precedes. It turns a true into a false, etc.. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal.</li>
+          <li>Note: Mixing data types can lead to some strange results when performing calculations. Be careful that you are referring to your variables correctly, and getting the results you expect. For example, enter '35' + '25' into your console. Why don't you get the result you expected? Because the quote marks turn the numbers into strings, so you've ended up concatenating strings rather than adding numbers. If you enter 35 + 25 you'll get the total of the two numbers.</li>
+          <li>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the if...else statement.</li>
+          <li>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code.</li>
+          <li>Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.</li>
+          <li>The alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.</li>
+          <li>Note: The return statement tells the browser to return the result variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable scoping.</li>
+          <li>Real interactivity on a website requires event handlers. These are code structures that listen for activity in the browser, and run code in response.</li>
+          <li>addEventListener() here is called an anonymous function, because it doesn't have a name. There's an alternative way of writing anonymous functions, which we call an arrow function. An arrow function uses () => instead of function ().</li>
+          <li>Null is a special value in JavaScript that refers to the absence of a value.</li>
+          <li>JavaScript is a dynamic language with dynamic types. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types.</li>
+          <li>examples: <br />
+            let foo = 42; // foo is now a number <br />
+            foo = "bar"; // foo is now a string <br />
+            foo = true; // foo is now a boolean <br /></li>
+          <li>JavaScript is also a weakly typed language, which means it allows implicit type conversion when an operation involves mismatched types, instead of throwing type errors.</li>
+          <li>examples: <br />
+            const foo = 42; // foo is a number <br />
+            const result = foo + "1"; // JavaScript coerces foo to a string, so it can be concatenated with the other operand <br />
+            console.log(result); // 421 <br /></li>
+          <li>Implicit coercions is very convenient, but can be a potential footgun if developers didn't intend to do the conversion, or intend to convert in the other direction (for example, string to number instead of number to string). For symbols and BigInts, JavaScript has intentionally disallowed certain implicit type conversions.</li>
+          <li>All types except Object define immutable values represented directly at the lowest level of the language. We refer to values of these types as primitive values.</li>
+          <li>All primitive types, except null, can be tested by the typeof operator. typeof null returns "object", so one has to use === null to test for null.</li>
+          <li>The Null type is inhabited by exactly one value: null.</li>
+          <li>The Undefined type is inhabited by exactly one value: undefined.</li>
+          <li>Conceptually, undefined indicates the absence of a value, while null indicates the absence of an object (which could also make up an excuse for typeof null === "object"). The language usually defaults to undefined when something is devoid of a value.</li>
+          <li>A return statement with no value (return;) implicitly returns undefined.</li>
+          <li>Accessing a nonexistent object property (obj.iDontExist) returns undefined.</li>
+          <li>A variable declaration without initialization (let x;) implicitly initializes the variable to undefined.</li>
+          <li>Many methods, such as Array.prototype.find() and Map.prototype.get(), return undefined when no element is found.</li>
+          <li>null is a keyword, but undefined is a normal identifier that happens to be a global property. In practice, the difference is minor, since undefined should not be redefined or shadowed.</li>
+          <li>The Boolean type represents a logical entity and is inhabited by two values: true and false. <br />
+            Boolean values are usually used for conditional operations, including ternary operators, if...else, while, etc. <br /></li>
+          <li>The Number type is a double-precision 64-bit binary format IEEE 754 value. It is capable of storing positive floating-point numbers between 2<sup>-1074</sup> (Number.MIN_VALUE) and 2<sup>1024</sup> (Number.MAX_VALUE) as well as negative floating-point numbers between -2<sup>-1074</sup> and -2<sup>1024</sup> <br /></li>
+            <li>Values outside the range ±(2<sup>-1074</sup> to 2<sup>1024</sup>) are automatically converted: <br /></li>
+            <li>Positive values greater than Number.MAX_VALUE are converted to +Infinity. <br /></li>
+            <li>Positive values smaller than Number.MIN_VALUE are converted to +0. <br /></li>
+            <li>Negative values smaller than -Number.MAX_VALUE are converted to -Infinity. <br /></li>
+            <li>Negative values greater than -Number.MIN_VALUE are converted to -0. <br /></li>
+          <li>The Number type has only one value with multiple representations: 0 is represented as both -0 and +0 (where 0 is an alias for +0). In practice, there is almost no difference between the different representations; for example, +0 === -0 is true.</li>
+          <li>NaN ("Not a Number") is a special kind of number value that's typically encountered when the result of an arithmetic operation cannot be expressed as a number. It is also the only value in JavaScript that is not equal to itself.</li>
+          <li>The BigInt type is a numeric primitive in JavaScript that can represent integers with arbitrary magnitude. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit (Number.MAX_SAFE_INTEGER) for Numbers.</li>
+          <li>The String type represents textual data and is encoded as a sequence of 16-bit unsigned integer values representing UTF-16 code units. Each element in the string occupies a position in the string. The first element is at index 0, the next at index 1, and so on.</li>
+          <li>JavaScript strings are immutable. This means that once a string is created, it is not possible to modify it. String methods create new strings based on the content of the current string.</li>
+          <li>A Symbol is a unique and immutable primitive value and may be used as the key of an Object property. In some programming languages, Symbols are called "atoms". The purpose of symbols is to create unique property keys that are guaranteed not to clash with keys from other code.</li>
+          <li>In computer science, an object is a value in memory which is possibly referenced by an identifier. In JavaScript, objects are the only mutable values. Functions are, in fact, also objects with the additional capability of being callable.</li>
+          <li>In JavaScript, objects can be seen as a collection of properties. With the object literal syntax, a limited set of properties are initialized; then properties can be added and removed. Object properties are equivalent to key-value pairs. Property keys are either strings or symbols. Property values can be values of any type, including other objects, which enables building complex data structures.</li>
+          <li>Data properties associate a key with a value. It can be described by the following attributes: value, writable, enumerable, and configurable.</li>
+          <li>Accessor property associates a key with one of two accessor functions (get and set) to retrieve or store a value. An accessor property has the following attributes: get, set, enumerable, and configurable.</li>
+          <li>Objects are ad-hoc key-value pairs, so they are often used as maps. However, there can be ergonomics, security, and performance issues. Use a Map for storing arbitrary data instead.</li>
+          <li>When representing dates, the best choice is to use the built-in Date utility in JavaScript.</li>
+          <li>Arrays are regular objects for which there is a particular relationship between integer-keyed properties and the length property.</li>
+          <li>Typed Arrays present an array-like view of an underlying binary data buffer, and offer many methods that have similar semantics to the array counterparts. "Typed array" is an umbrella term for a range of data structures, including Int8Array, Float32Array, etc.</li>
+          <li>JSON (JavaScript Object Notation) is a lightweight data-interchange format, derived from JavaScript, but used by many programming languages. JSON builds universal data structures that can be transferred between different environments and even across languages.</li>
         </ul>
       </section>
     </main>
@@ -132,5 +216,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
